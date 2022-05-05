@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
     <title>NETFLIX  CLONE GAMEHUB</title>
 </head>
 <body>
@@ -12,10 +20,10 @@
         <div class="container">
             <h2 class="logo">GAMEHUB</h2>
             <nav>
-                <a href="#">FPS</a>
-                <a href="#">CORRIDA</a>
-                <a href="#">ESPORTES</a>
-                <a href="#">RPG</a>
+                <a href="#fps"><i class="fa-solid fa-gun"></i>FPS</a>
+                <a href="#corrida"><i class="fa-solid fa-car"></i>CORRIDA</a>
+                <a href="#esportes"><i class="fa-solid fa-futbol"></i>ESPORTES</a>
+                <a href="#rpg"><i class="fa-solid fa-dice-d20"></i>RPG</a>
             </nav>
         </div>
     </header>
@@ -24,22 +32,128 @@
         <div class="jogo-principal">
             <div class="container">
                 <h3 class="titulo">Counter Strike: Global Offensive</h3>
-                <p class="descricao">O Counter-Strike: Global Offensive (CS:GO) melhora a jogabilidade de ação baseada em equipes na qual foi pioneiro quando lançado há 19 anos.</p>
-            </div>
+                <p class="descricao">O Counter-Strike: Global Offensive (CS:GO) melhora a jogabilidade de ação baseada em equipes na qual foi pioneiro quando lançado há 19 anos.</p>            
                 <div class="botoes">
+                    <a href="https://www.youtube.com/watch?v=edYCtaNueQY" target="_blank">
                     <button role="button" class="botao">
                         <i class="fa-solid fa-gamepad"></i>
                         JOGAR
                     </button>
-                    <button role="button" class="botao">
+                </a>
+                    <button onclick="unhide()" role="button" class="botao">
                         <i class="fa-solid fa-star"></i>
                         FAVORITAR
                     </button>
+                    <div class="show">
+                        <p class="fav">Jogo adicionado aos favoritos com sucesso!</p>
+                    </div>
                 </div>
+            </div>
         </div>
     </main>
 
+    <div id="fps">
+        <h1 class="titulos-secao">Jogos de fps</h1>
+    <div class="carousel-fps">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                    <img class="box-jogos" src="img/BF2042.jpg" alt="Battlefield 2042">
+            </div>
+            <div class="item">
+                    <img class="box-jogos" src="img/CODBO3.jpg" alt="Call of Duty: Black Ops 3">
+            </div>
+            <div class="item">
+                    <img class="box-jogos" src="img/CODWARZONE.jpg" alt="Call of Duty: WARZONE">
+            </div>
+            <div class="item">
+                    <img class="box-jogos" src="img/R6SIEGE.jpeg" alt="Rainbow Six Siege">
+            </div>
+            <div class="item">
+                    <img class="box-jogos" src="img/PUBG.png" alt="Player Unknow's Battlegrounds">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="corrida">
+        <h1 class="titulos-secao">Jogos de Corrida</h1>
+        <div class="carousel-fps">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                        <img class="box-jogos" src="img/F1 2021.jpg" alt="Fórmula 1 2021">
+                </div>
+                <div class="item">
+                        <img class="box-jogos" src="img/FORZA5.jpg" alt="Forza Horizon 5">
+                </div>
+                <div class="item">
+                        <img class="box-jogos" src="img/NFSHEAT.jpg" alt="Need for Speed: Heat">
+                </div>
+                <div class="item">
+                        <img class="box-jogos" src="img/THECREW2.jpg" alt="The Crew 2">
+                </div>
+                <div class="item">
+                        <img class="box-jogos" src="img/iracing.jpg" alt="iRacing">
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="esportes">
+            <h1 class="titulos-secao">Jogos de esporte</h1>
+            <div class="carousel-fps">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                            <img class="box-jogos" src="img/PES2021.jpg" alt="Pro Evolution Soccer 2021">
+                    </div>
+                    <div class="item">
+                            <img class="box-jogos" src="img/FIFA2022.png" alt="FIFA 2022">
+                    </div>
+                    <div class="item">
+                            <img class="box-jogos" src="img/GWYF.jpg" alt="Golf With Your Friends">
+                    </div>
+                    <div class="item">
+                            <img class="box-jogos" src="img/NBA2K22.jpg" alt="NBA 2022">
+                    </div>
+                    <div class="item">
+                            <img class="box-jogos" src="img/NFL22.jpg" alt="NFL 2022">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div id="rpg">
+                <h1 class="titulos-secao">Jogos de rpg</h1>
+                <div class="carousel-fps">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                                <img class="box-jogos" src="img/eldenring.jpg" alt="Elden Ring">
+                        </div>
+                        <div class="item">
+                                <img class="box-jogos" src="img/skyrim.jpg" alt="The Elder Scrolls 4 Skyrim">
+                        </div>
+                        <div class="item">
+                                <img class="box-jogos" src="img/godofwar.jpg" alt="God of War">
+                        </div>
+                        <div class="item">
+                                <img class="box-jogos" src="img/destiny2.jpg" alt="Destiny 2">
+                        </div>
+                        <div class="item">
+                                <img class="box-jogos" src="img/lostark.jpg" alt="Lost Ark">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <footer>
+                    <h5><i class="fa-brands fa-ravelry"></i>Todos os direitos reservados</h5>
+                </footer>
+
     <script src="https://kit.fontawesome.com/7271b5d267.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/owl/fav.js"></script>
+
 
 </body>
 </html>

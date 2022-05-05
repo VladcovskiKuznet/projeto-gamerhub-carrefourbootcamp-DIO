@@ -11,10 +11,17 @@
 
 /* estilização da base */
 
+
+
 body {
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    
+}
+
+header {
+    background-color: black;
 }
 
 header .container {
@@ -46,7 +53,7 @@ header nav a:hover {
 /* jogo principal */
 
 .jogo-principal {
-    font-size: 18px;
+    font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/img/cs-capa.jpg');
     
     height: 400px;
@@ -64,9 +71,9 @@ header nav a:hover {
 }
 
 .titulo {
-    margin-top: 15%;
-    font-size: 55px;
+    font-size: 45px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
 }
 
 .botao {
@@ -91,4 +98,68 @@ header nav a:hover {
     margin-right: 6px;
 }
 
+.container {
+    margin-left: 20px;
+}
+
+.jogo-principal .container {
+    width: 80%;
+}
+
+.box-jogos {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
 /* jogo principal */
+
+/* carrossel */
+
+.carousel-fps {
+    margin-top: 2%;
+}
+
+.titulos-secao {
+    text-align: center;
+    margin-top: 1%;
+
+    color: var(--vermelho);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+
+    text-align: center;
+}
+
+/* carrossel */
+
+/* icones  */
+
+.fa-ravelry {
+    margin-right: 10px;
+}
+
+.fa-gun {
+    margin-right: 5px;
+}
+.fa-car {
+    margin-right: 5px;
+}
+.fa-futbol {
+    margin-right: 5px;
+}
+.fa-dice-d20 {
+    margin-right: 5px;
+}
+
+/* icones  */
+
+/* responsável por manter a visibilidade em hidden até ser acionado pelo script  */
+.fav {
+    visibility: hidden;
+}
